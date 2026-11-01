@@ -154,7 +154,7 @@ export default function Home() {
                             visible={!!robot.error}
                             type="error"
                             icon={<MdError size={17} />}
-                            title="error"
+                            title={t('home.error.error')}
                             sub={robot.error}
                             robotType={RobotType.NeatoGen3}
                         />
@@ -162,7 +162,7 @@ export default function Home() {
                             visible={!!robot.alert}
                             type="warning"
                             icon={<MdWarning size={17} />}
-                            title="alert"
+                            title={t('home.error.warning')}
                             sub={robot.alert}
                             robotType={RobotType.NeatoGen3}
                             action={t('home.dismissAlert')}

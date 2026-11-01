@@ -1,5 +1,5 @@
 {
-    "String-version": "1",
+    "String-version": "3",
     "common": {
         "save": "Enregistrer",
         "cancel": "Annuler",
@@ -66,7 +66,7 @@
         "noRobotsLinkedInfo": "Aucun robot ne s'est connecté à ce serveur pour l'instant.",
         "allRobotsOfflineInfo": "Ils apparaîtront ici au fur et à mesure qu'ils se connectent.",
         "waiting": "En attente des robots…",
-        "derverHint": "Jetez un œil au GitHub de Vacuula sur la façon de configurer votre robot ! Si un problème persite avec la connexion du robot, essayez de refaire la procédure avec l'installateur vacuula ou demandez de l'aide sur github ou sur le discord !"
+        "serverHint": "Consultez le dépôt GitHub de Vacuula pour configurer votre robot. Si le robot ne se connecte toujours pas, relancez le programme d’installation Vacuula ou demandez de l’aide sur GitHub ou Discord."
     },
     "home": {
         "errorTitle": "Erreur",
@@ -93,7 +93,13 @@
         "modeSpotInfo": "Nettoie une surface ciblée définie par sa longueur et sa largeur.",
         "mapModeHint": "Le nettoyage basé sur la carte est disponible quand le robot est arrimé sur la base de chargement.",
         "height": "Longueur",
-        "width": "Largeur"
+        "width": "Largeur",
+        "btnExplain": {
+            "locate": "Robot introuvable ?",
+            "mode": "Mode",
+            "navigation": "Navigation",
+            "cleaning": "Nettoyage"
+        }
     },
     "runs": {
         "entryTitle": "{{startedBy}} nettoyage | {{date}}",
@@ -107,6 +113,7 @@
         "timing": "{{error}}s en erreur, {{pause}}s en pause, {{charging}}s en charge",
         "pickedUp_one": "soulevé {{count}} fois",
         "pickedUp_other": "soulevé {{count}} fois",
+        "pickedUp_many": "soulevé {{count}} fois",
         "durationLong": "{{hours}}h {{minutes}}min {{seconds}}sec",
         "durationShort": "{{minutes}}min {{seconds}}sec"
     },
@@ -165,6 +172,8 @@
     "settings": {
         "serial": "Num de série : {{serial}}",
         "birthday": "Anniversaire : {{date}}",
+        "batteryCycles": "Cycles de batterie : {{cycles}}",
+        "robotModel": "Modèle : {{model}}",
         "robotSettings": "Paramètres du robot",
         "forceFloorplan": "Forcer une carte",
         "robotLanguage": "Langue",
@@ -174,6 +183,7 @@
         "clickToStart": "Appuyer pour démarrer",
         "tapToConfirm_one": "Appuyez {{count}} dernière fois pour confirmer",
         "tapToConfirm_other": "Appuyez {{count}} fois pour confirmer",
+        "tapToConfirm_many": "Appuyez {{count}} fois pour confirmer",
         "robotSounds": "Sons du robot",
         "binReminder": "Intervalle pour vider le bac à poussière (min)",
         "filterReminder": "Intervalle pour le changement du filtre (mois)",
@@ -184,6 +194,12 @@
         "theme_dark": "Sombre",
         "theme_soft": "Sombre (doux)",
         "theme_light": "Clair",
+        "mapShapeSelect": "Forme du tracé sur la carte",
+        "mapShape": {
+            "circle": "Cercle",
+            "square": "Carré",
+            "heart": "Cœur"
+        },
         "units": "Unités",
         "units_metric": "Métrique (m², cm)",
         "units_imperial": "Imperial (ft², ft)",
@@ -199,6 +215,11 @@
         "title": "Connexion au serveur impossible",
         "subtitle": "L'application ne peut pas se connecter au serveur Vacuula ! Vérifiez que le serveur est en marche et accessible depuis cet appareil.",
         "mdnsDisclaimer": "Si vous utilisez mDNS (site via vacuula.local), alors cela peut mettre un peu de temps pour que l'appareil trouve l'IP du serveur, si le problème persiste, essayez de redémarrer le navigateur.",
+        "retry": "Réessayer"
+    },
+    "hasOutdatedRobot": {
+        "title": "Un de vos robots doit être mis à jour",
+        "subtitle": "Votre serveur utilise la version {{serverVersion}}, qui nécessite le programme d’installation en version {{minInstallerVersion}} ou ultérieure. Relancez la dernière version du programme d’installation pour les robots suivants.",
         "retry": "Réessayer"
     },
     "robotErrorCode": {
